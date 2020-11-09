@@ -1,7 +1,7 @@
 require 'minitest/autorun'
 require_relative '../src/main'
 
-class ReduceTest < Minitest::Unit::TestCase
+class ReduceTest < MiniTest::Test
 
   def test_should_reduce_to_2
     input = [:program, [:+, 1, 1]]

@@ -1,7 +1,7 @@
 require 'minitest/autorun'
 require_relative '../../src/predicates'
 
-class PredicateTest < MiniTest::Unit::TestCase
+class PredicateTest < MiniTest::Test
 
   def test_define_invocation_with_key_value_is_valid
     input = [:define, :x, 3]

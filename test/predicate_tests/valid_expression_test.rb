@@ -2,7 +2,7 @@ require 'minitest/autorun'
 require_relative '../../src/predicates'
 require_relative '../../src/main'
 
-class ValidExpressionTest < MiniTest::Unit::TestCase
+class ValidExpressionTest < MiniTest::Test
 
   def test_balanced_parens_are_valid_1
     input = '(program (+ 1 1))'

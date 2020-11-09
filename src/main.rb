@@ -3,8 +3,6 @@ require_relative './predicates'
 
 VARIABLES = {}
 
-example = '(program (define a 3) (define times *) (times a a (+ 1 (times 5 4) 5)))'
-
 def tokenize(string)
   throw ArgumentError unless valid_expression?(string)
   string

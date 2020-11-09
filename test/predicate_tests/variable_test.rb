@@ -2,7 +2,7 @@ require 'minitest/autorun'
 require_relative '../../src/predicates'
 require_relative '../../src/main'
 
-class VariableTest < MiniTest::Unit::TestCase
+class VariableTest < MiniTest::Test
 
   def test_variable_exists
     input = :hey

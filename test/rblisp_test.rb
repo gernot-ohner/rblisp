@@ -1,7 +1,7 @@
 require 'minitest/autorun'
 require_relative '../src/main'
 
-class MainTest < MiniTest::Unit::TestCase
+class MainTest < MiniTest::Test
 
   def test_evaluates_to_234
     input = '(program (define a 3) (define times *) (times a a (+ 1 (times 5 4) 5)))'

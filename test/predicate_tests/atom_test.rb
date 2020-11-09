@@ -1,7 +1,7 @@
 require 'minitest/autorun'
 require_relative '../../src/predicates'
 
-class PredicateTest < MiniTest::Unit::TestCase
+class PredicateTest < MiniTest::Test
 
   def test_integer_is_atom
     actual = atom? 1

@@ -1,7 +1,7 @@
 require 'minitest/autorun'
 require_relative '../src/main'
 
-class ParserTest < Minitest::Unit::TestCase
+class ParserTest < MiniTest::Test
 
   def test_parser_should_parse_correctly
     input = %w[( + 1 1 )]
