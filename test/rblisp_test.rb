@@ -10,11 +10,12 @@ class MainTest < MiniTest::Test
     assert_equal(expected, actual)
   end
 
-  def test_evaluates_to_16
-    input = '(+ 1 (+ 2 3) (+ 7 3))'
-    expected = 16
-    actual = evaluate(input)
-    assert actual == expected
+  def test_throws_no_method_error
+    # the first element of a list is always expected to be an operator
+    input = '(+ 1 (false 2 3) (+ 7 3))'
+    assert_raises NoMethodError do
+      evaluate(input)
+    end
   end
 
   def test_evaluates_to_0
